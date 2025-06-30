@@ -1,7 +1,7 @@
 Source: https://github.com/alessio-livolsi/translation_tool
 
 Thank you alessio-livolsi > https://github.com/alessio-livolsi
-
+I added utf-8 support for output.
 
 # Translation Tool
 
