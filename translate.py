@@ -107,5 +107,7 @@ for entry in tqdm(po_file, desc="Translating messages"):
 base_filename = os.path.splitext(filename)[0]
 dest_lang_code = language
 translated_filename = f"{base_filename}_{dest_lang_code}.po"
-po_file.save(translated_filename)
+
+with open(translated_filename, "w", encoding="utf-8") as f:
+    f.write(po_file.__unicode__())
 print(f"Your file has been translated and saved as {translated_filename}.")
